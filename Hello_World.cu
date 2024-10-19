@@ -1,6 +1,31 @@
 #include <stdio.h>
 #include <cuda_runtime.h>
 
+
+
+// #include <stdio.h>
+
+// // CUDA kernel function to print from the GPU
+// __global__ void helloFromGPU()
+// {
+//     printf("Hello World from the GPU!\n");
+// }
+
+// int main()
+// {
+//     // Print from the CPU
+//     printf("Hello World from the CPU!\n");
+
+//     // Launch kernel on the GPU with one block and one thread
+//     helloFromGPU<<<1, 1>>>();
+
+//     // Wait for the GPU to finish before returning
+//     cudaDeviceSynchronize();
+
+//     return 0;
+// }
+
+
 #define N 16 // thread
 
 // CUDA kernel
@@ -35,3 +60,5 @@ int main()
 
     return 0;
 }
+
+
